@@ -6,52 +6,81 @@
     <title>Mahmoud Abd Allah CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Picture1.png" sizes="32x32">
-    <script src="main.js"></script>
+   
     <link rel="stylesheet" type="text/css"  href="Style.css" /> 
 </head>
 <body>
+    <header>
+            <!-- <div class="Top_Header"> -->
+            <!-- </div> -->
+    </header>
     <div class="Header">
-            <div class="Top_Header">
-                <h1 Class="My_Name" >Mahmoud Abd Allah Mahmoud</h1>
-            </div>
-            <div class="left_Header"></div>
-            <div class="Center_Header">
-                <img class="Profile_Image" src="Photo/nobody_m.original.jpg" alt="nobody_m.original">
-                <p class="Contact">Contact &ensp;</p>
-                <img class="Contact_image" src="Photo/Contact.png" alt="Contact">
-                <p class="Contact_Num">+201111309423 <br>+201154755851</p>
-                <img class="Mail_image" src="Photo/Mail.png" alt="Mail">
-                <p class="Mail_Value">M.Daoud.01001101@gmail.com</p>
-                <p Class="Facebock_Value" >
-                    Facebock link
+                <div class="left_Header"></div>
+                <div class="Center_Header">
+                    <h1 Class="My_Name" >Mahmoud Abd Allah</h1>
+                    <img class="Profile_Image" src="Photo/nobody_m.original.jpg" alt="nobody_m.original">
+                   <div class="Contact_block">
+                        <p class="Contact">Contact</p>
+                        <p class="Contact_Num">+201111309423 <br>+201154755851
+                            <img class="Contact_image" src="Photo/Contact.png" alt="Contact">
+                        </p>                      
+                        <p class="Mail_Value">M.Daoud.01001101@gmail.com
+                                <img class="Mail_image" src="Photo/Mail.png" alt="Mail" >
+                        </p>
                         <a href="https://www.facebook.com/ProgrammerMahmoud" target="_blank">
-                        <img class="Facebock_image" src="Photo/Facebock.png" alt="ProgrammerMahmoud"><!-- width="42" height="42" border="0"-->
+                            <p Class="Facebock_Value" >Facebock link
+                                <img class="Facebock_image" src="Photo/Facebock.png" alt="ProgrammerMahmoud"><!-- width="42" height="42" border="0"-->
+                            </p>
+                            
+                            <p id="Age_Value"></p>
                         </a>
-                </p>
+                   </div>
             </div>
             <div class="Right_Header"></div>
             <div class ="CV_body">
                 <div class="Education">
-                    <h3 Class="h3_1">Education</h3>
+                    <h3 >Education</h3>
                     <a href="https://www.futureacademyegypt.com/ar/faculties/84" target="_blank">
                     <img class="Future_Image" src="Photo/Future.png" alt="Future" > </a>
-                    <p class="University">University</p>
-                    <p class="Uni_Value">Management Systems and Information September 2016</p>
-                    <p class="Rating">Rating</p>
-                    <p class="Rat_Value">Very Good</p>
-                    <p class="Grad_proj">Graduation project</p>
-                    <p class="Grad_Value">
-                        Desktop Application ( Credit Hour System ) <br>
-                        Using : VB.Net – SQL Server <br>
-                        Rating : Excellent <br>
+                    <p class="University">
+                        <ul class="first-letter">
+                            <li>University :</li>
+                            <li>Rating :</li>
+                            <li>Graduation project :</li>
+                        </ul>    
+                    </p>
+                    <p class="Education_Val">
+                            <ul class="last_letter">
+                                   <li> MIS September 2016.</li> <!--  Management Systems and Information -->
+                                    <li>Very Good.</li>
+                                    <li id="Gr_proj">Desktop Application ( Credit Hour System ) <br>
+                                        Using : VB.Net – SQL Server <br>
+                                        Rating : Excellent <br>
+                                    </li>
+                            </ul>  
                     </p>
                 </div>
                 <div id="Comp_Skil" class="Computer_Skills">
-                    <h3 class="h3_2">Computer Skills</h3>
-                    <p class="Mc_office"> Microsoft office </p>
-                    <p class="Mc_Value">• Word <br>• Excel <br>• Power Point <br>• Access</p>
-                    <p class="Pro_Language"> Programming Language</p>
-                    <p class="Pro_Lang_Value">• VB.Net <br>• C#.Net<br>• Html5 <br>• CSS3<br>• js<br>• php</p>
+                    <h3>Computer Skills</h3>
+                    
+                        <ul class="Mc_Value">
+                                <p class="Mc_office">Microsoft office</p>
+                            <li>Word</li>
+                            <li>Excel</li>
+                            <li>Power Point</li>
+                            <li>Access</li>
+                        </ul>
+                        <ul class="Pro_Lang_Value">
+                                <p class="Pro_Language">Programming Language</p>
+                            <li>VB.Net</li>
+                            <li>C#.Net</li>
+                            <li>Html5</li>
+                            <li>CSS3</li>
+                            <li>js</li>
+                            <li>php</li>
+                        </ul>
+                    <!-- <p class="Pro_Language"> Programming Language</p>
+                    <p class="Pro_Lang_Value">• VB.Net <br>• C#.Net<br>• Html5 <br>• CSS3<br>• js<br>• php</p> -->
                     <p class="DB"> DataBase</p>
                     <p class="DB_Value">• Access database<br>• SQL Server</p>
                     <p Class="certificate">
@@ -60,20 +89,9 @@
                             Score : 92
                         </p>
                      <img id="myImg" src="Photo/certificate.png" alt="certificate" style="width:100%;max-width:150px">
-                     <!-- The Modal -->
-                     <div id="myModal" class="modal">
-                     <!-- The Close Button -->
-                     <span class="close">&times;</span>
-                     <!-- Modal Content (The Image) -->
-                     <img id="img01" class="modal-content" src="Photo/certificate.png" alt="certificate">
-                     <!-- Modal Caption (Image Text) -->
-                     <div id="caption"></div>
                     </div>
-
-                    
-                </div>
             </div>  
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
- 

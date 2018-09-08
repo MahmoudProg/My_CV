@@ -1,16 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Patua+One');
+* {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#Age_Value{
+    color:white;
+    position: absolute;
+    top:250px; left:100px;
+}
 html,body{
-    height: 98%;
+    height: 100%;
+    overflow: hidden;
     
 }
 body{
-    position: absolute;
-    left:100px;
-    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
-    animation: Change 10s infinite;
+    background-image: url("Background/1.jpg");
     font-family: Arial, Helvetica, sans-serif;
 }
    @keyframes Change{
@@ -18,85 +27,116 @@ body{
         50%{background-image: url("Background/2.jpg");}
         100%{background-image: url("Background/1.jpg");}
     }
-.Top_Header{
-    /*border-radius: 20px;*/
-    position: absolute;
-    background-color: rgba(20,20,20,1.5);
-    left: 280px;
-    width: 1000px;
-    height:80px ;
-    box-shadow: 0px 0px 20px red;
-    border-radius: 50px;
+
+
+.left_Header,.Right_Header,.Center_Header{
+    top:0px;
+    height: 100%;
 }
-.My_Name{
-    position: relative;
-    color: white;
-    Top:-10px; 
-    text-shadow: 0px 0px 20px red;
-    font-size:40px;
-}
-.left_Header{
-    position: absolute;
-    background-color: rgba(90,10,10,1.5);
-    left: 15px;
-    width: 10px;
-    height: 1000px;}
-    .Profile_Image{
+    .left_Header{
         position: absolute;
-        Top:13px; left:10px;
-        width: 209px;
-        border-radius: 100%;
-        }
+        background-color: rgba(90,10,10,1.5);      
+        left: 15px;
+        width: 10px;
+       
+        box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    }
+    .Right_Header{
+        position: absolute;
+        background-color: rgba(90,10,10,1.5);
+        left: 335px;
+        width: 10px; 
+        box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    }
+
+   
         /*================Center_Header================*/
     .Center_Header{
         position: absolute;
         background-color: rgba(20,20,20,1.5);
         left: 30px;
-        width: 230px;
-        height: 1000px;
+        width: 300px;
         color:rgb(200, 200, 200);      
+        }
+        .Profile_Image{
+            position: absolute;
+            Top:13px; left:10px;
+            width: 230px;
+            margin: 0px 25px;
+            border-radius: 100%;
+            }
+        h1{
+            position:absolute; 
+            background-color: rgba(141, 6, 6, 0.5);
+            font-size:27px;
+            width:300px;
+            top:230px;
+            text-shadow: 0px 0px 30px red;
+            box-shadow:1px 1px 10px rgb(0, 0, 0);
+            padding: 10px 0px;
+        }
+        .Contact_block{
+            position: absolute; 
+            margin: 0px;
+            top:300px;
+            width: 300px;
+            height: 300px;
+            text-shadow: 1px 1px 1px black;
         }
         .Contact_image,.Mail_image,.Facebock_image,.Profile_Image{
             box-shadow: 0px 0px 30px red ;
             border-radius: 100%;
+           
         }
         .Contact{
-            position: absolute;
-            top:220px; left:10px;
+            color : rgb(180, 180, 180);
+            background-color: rgba(140, 0, 0, 0.2);
+            box-shadow:1px 1px 10px rgb(0, 0, 0);
+            width:290px;
+            text-align: left;
+            padding: 5px;            
             font-size: 25px;
             text-shadow: 2px 2px 10px rgb(255, 2, 2);
         }
        .Contact_image{
         position: absolute;
-        top:280px; left:100px;
+        top:10px; left:-40px;
         width: 35px;
        }
         .Contact_Num{
             position: absolute;
-            top:310px; left:60px;
+            margin:0px 10px;
+            padding:10px 10px;
+            top:70px; left:50px;
             font-size: 15px;
+            line-height: 20px;
         }
         .Mail_image{
             position: absolute;
-            top:380px; left:100px;
+            top:0px; left:-40px;
             width: 35px;
         }
         .Mail_Value{
             position: absolute;
-            top:410px; left:5px;
+            margin:0px 10px;
+            padding:10px 10px;
+            top:135px; left:50px;
             font-size: 15px;
         }
-        p.Facebock_Value{
+        .Facebock_Value{
             position: absolute;
-            top:510px; left:70px;
+            margin:0px 10px;
+            padding:10px 10px;
+            top:190px; left:50px;
             font-size: 15px;
             text-shadow: 0px 0px 20px red ;
+            color :white;
         }
         img.Facebock_image{
             position: absolute;
-            top:-50px; left:25px;
+            top:0px; left:-40px;
             cursor: pointer;
-            width: 45px;
+            width: 35px;
             box-shadow: 0px 0px 20px red ;
             border-radius: 100%;
         }
@@ -106,24 +146,35 @@ body{
         }
         p.Facebock_Value:hover{
             text-shadow: 0px 0px 20px aqua ;
+            cursor: pointer;
         }
         
         /*===============Center_Header=================*/
-    .Right_Header{
-        position: absolute;
-        background-color: rgba(90,10,10,1.5);
-        left: 265px;
-        width: 10px;
-        height: 1000px;}
-
-    .CV_body{
-        position: absolute;
-        /*background-color: rgba(90,10,10,0.5); */
-        top:85px;
-        left: 280px;
-        width: 1000px;
-        height: 87%;
+        p, li{
+            width:max-content;
         }
+    .CV_body{    
+        width: 77.3vw;        
+        position: absolute;
+        margin-left: 0vw;
+        height: 100%;
+        margin-top: 0px;
+        left: 350px; 
+        overflow:scroll;
+        /* max-width:1000px;
+        max-height:100%;  
+        background-color: rgba(141, 6, 6, 0.5); */
+        }
+      
+::-webkit-scrollbar {
+    width: 15px;
+   height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(141, 6, 6, 0.5);
+    /* box-shadow:  0px 0px 10px rgba(255, 2, 2, 1.0); */
+}
+
     /*====================Education===================*/
     .Education{
         position: absolute;
@@ -137,43 +188,42 @@ body{
             position: absolute;
             color: rgb(180, 180, 120);
             left: 10px; 
+            width: 100%;
+            padding: 5px 15px;
             font-size:21px;
             text-shadow: 1px 1px 4px red;
+            background-color: rgba(140, 0, 0, 0.2);
+            box-shadow:1px 1px 10px rgb(0, 0, 0);
             }
             .Future_Image{
+                -webkit-filter: drop-shadow(5px 5px 15px rgb(255, 0, 0));
+                filter: drop-shadow(5px 5px 15px rgb(255, 0, 0));
                 cursor: pointer;
                 position: absolute;
-                Top:40px; left:150px;
+                Top:55px; left:350px;
                 width: 150px;
             }
-            .University{
+            .first-letter{
                 position: absolute;
-                Top:50px; left:20px;
-                color: rgb(161, 160, 160);
+                color:white;
+                text-shadow:1px 1px 10px red;
+                top :50px;
+                text-align: right;
+                line-height: 30px;
+                list-style-type: none; 
+            }   
+            .last_letter{
+                position: absolute;
+                color:white;
+                top:50px; left:150px;
+                line-height: 30px;
+                list-style-type: none; 
+
             }
-                .Uni_Value{
-                    position: absolute;
-                    Top:50px; left:300px;
-                    color: lavender;
-                }
-            .Rating{
+            #Gr_proj{
                 position: absolute;
-                Top:80px; left:20px;
-                color: rgb(161, 160, 160);
-            }
-            .Rat_Value{
-                position: absolute;
-                Top:80px; left:160px;
-                color: lavender;
-            }
-            .Grad_proj{
-                position: absolute;
-                Top:110px; left:20px;
-                color: rgb(161, 160, 160);
-            }
-            .Grad_Value{
-                position: absolute;
-                Top:110px; left:160px;color: lavender;
+                top:65px;
+                line-height: 20px;
             }
             .DB{
                 position: absolute;
@@ -196,21 +246,24 @@ body{
         }
             .Mc_office{
                 position: absolute;
-                top:35px; left:30px;
+                
+                top:-40px; left:0px;
                 font-weight: bold;
                 }
             .Mc_Value{
                 position: absolute;
-                top:60px; left:50px;
+                top:80px; left:40px;
                 }
             .Pro_Language{
                 position: absolute;
-                top:35px; left:200px;
+                top:-40px; left:0px;
                 font-weight: bold;
+               
+
                 }
             .Pro_Lang_Value{
                 position: absolute;
-                top:60px; left:200px;
+                top:80px; left:200px;
                 }    
             .certificate{
                 position: absolute;
@@ -229,92 +282,41 @@ body{
                 top:255px; left:370px;
                 width: 150px ;
             }
-            #myImg:hover {opacity: 0.7;}
+            #myImg:hover {opacity: 0.5;}
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
 
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
     }
-}
+} */
 
 
 
-@media (max-width: 500px) {
-     /*PUT CSS HERE TO ALTER WEBSITE TO SINGLE COLUMN 
-    
-     font-family: 'Anton', sans-serif;
-    .Top_Header{
-    border-radius: 2px;
-    position: absolute;
-    background-color: rgba(27,44,62,1.5);
-    left: 880px;
-    width: 1000px;
-    height:80px ;
+@media  (max-width: 500px) {
+   
+       
+        .My_Name{
+            
+        }
+       .Center_Header{
+        
+       }
+        .left_Header{
+        position: absolute;
+        text-align:center;
+        top:5px;
+        width: 100%;
+        height: 10px;
 
-}
-    */
+        }
+        .Right_Header{
+            top:100px;
+        }
+        .CV_body{
+           
+        }
  }
  
