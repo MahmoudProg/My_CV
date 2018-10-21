@@ -8,6 +8,8 @@ function calculate_age(dob) {
   return Math.abs(age_dt.getUTCFullYear() - now_year);
 }
 
+
+
 // document.getElementById("Age_Value").innerHTML = calculate_age(new Date(1994, 1, 21));
 
 
